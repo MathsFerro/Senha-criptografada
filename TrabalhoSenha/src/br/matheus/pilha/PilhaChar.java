@@ -1,9 +1,10 @@
 package br.matheus.pilha;
 
 public class PilhaChar {
-	public final int N = 10;
-
-	char dados[] = new char[N];
+	
+	public int N = 1;
+	
+	public char dados[] = new char[N];
 	int topo;
 
 	public void init() {
