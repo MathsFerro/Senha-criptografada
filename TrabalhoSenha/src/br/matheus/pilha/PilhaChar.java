@@ -1,12 +1,13 @@
 package br.matheus.pilha;
 
 public class PilhaChar {
-	
-	public int N = 1;
+
+	private int topo;
+	public int N = 20;	
 	
 	public char dados[] = new char[N];
-	int topo;
-
+	public String senha;
+	
 	public void init() {
 		topo = 0;
 	}
