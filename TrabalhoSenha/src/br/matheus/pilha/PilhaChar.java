@@ -3,9 +3,9 @@ package br.matheus.pilha;
 public class PilhaChar {
 
 	private int topo;
-	public int N = 20;	
+	public int N;	
 	
-	public char dados[] = new char[N];
+	public char dados[];
 	public String senha;
 	
 	public void init() {
@@ -34,8 +34,8 @@ public class PilhaChar {
 			return false;
 	}
 
-	public static class RetornoChar {
-		char elem;
+	public class RetornoChar {
+		public char elem;
 		boolean sucesso;
 	}
 
