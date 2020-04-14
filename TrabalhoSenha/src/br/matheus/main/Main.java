@@ -17,6 +17,7 @@ public class Main {
 			pilha.dados = new char[pilha.N];
 
 			for (int x = 0; x < pilha.senha.length(); x++) {
+				
 				pilha.push(pilha.senha.charAt(x));
 			}
 
