@@ -10,15 +10,17 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 		PilhaChar pilha = new PilhaChar();
 
-		String auxSenha = "";
 		if (pilha.isEmpty()) {
 			System.out.print("Digite a senha que você quer armazenar: ");
 			pilha.senha = scan.nextLine();
 			pilha.N = pilha.senha.length();
 			pilha.dados = new char[pilha.N];
+
 			for (int x = 0; x < pilha.senha.length(); x++) {
 				pilha.push(pilha.senha.charAt(x));
 			}
+
+			String auxSenha;
 			String senhaInvertida[] = new String[pilha.N];
 			for (int x = pilha.senha.length() - 1; x >= 0; x--) {
 				RetornoChar aux = pilha.pop();
@@ -44,12 +46,12 @@ public class Main {
 				case 'u':
 					senhaInvertida[x] = String.valueOf(aux.elem = '+');
 					break;
+
 				}
 				senhaInvertida[x] = String.valueOf(aux.elem);
 				System.out.print(senhaInvertida[x].toUpperCase());
 			}
 		}
-
 
 	}
 }
