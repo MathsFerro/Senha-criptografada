@@ -64,7 +64,7 @@ public class PilhaChar {
 		return saida;
 	}
 
-	public int popSimples() {		
+	public int popSimples() {	
 		topo = topo - 1;
 		return dados[topo];
 	}
